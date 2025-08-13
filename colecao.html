@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda Carioca - Coleção</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #fff8f0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #ff9f1c, #ffbf69);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+        }
+        nav {
+            background-color: #2ec4b6;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .produtos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .produto {
+            background: white;
+            border-radius: 12px;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .produto:hover {
+            transform: scale(1.05);
+        }
+        .produto img {
+            max-width: 100%;
+            border-radius: 12px;
+        }
+        footer {
+            background-color: #2ec4b6;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Moda Carioca</h1>
+        <p>Nossa Coleção de Moda Praia</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="colecao.html">Coleção</a>
+    </nav>
+
+    <section id="colecao">
+        <h2>Peças Exclusivas</h2>
+        <div class="produtos">
+            <div class="produto">
+                <img src="https://images.unsplash.com/photo-1520962918287-7448c2878f65" alt="Biquíni Floral">
+                <h3>Biquíni Floral</h3>
+                <p>R$ 149,90</p>
+            </div>
+            <div class="produto">
+                <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f" alt="Biquíni Listrado">
+                <h3>Biquíni Listrado</h3>
+                <p>R$ 159,90</p>
+            </div>
+            <div class="produto">
+                <img src="https://images.unsplash.com/photo-1593032457860-5a012b60f12d" alt="Sunga Azul">
+                <h3>Sunga Azul</h3>
+                <p>R$ 89,90</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Moda Carioca - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
